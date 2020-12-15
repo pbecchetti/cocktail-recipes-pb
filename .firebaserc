@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "adscore-dev": {
+      "hosting": {
+        "cocktail": [
+          "adscore-dev"
+        ]
+      }
+    }
+  }
+}

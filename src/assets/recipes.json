@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Mojito",
+        "glass": "collins",
+        "category": "Longdrink",
+        "ingredients": [
+            {
+                "unit": "cl",
+                "amount": 4,
+                "ingredient": "rum"
+            },
+            {
+                "unit": "cl",
+                "amount": 3,
+                "ingredient": "Lime juice"
+            },
+            {
+                "ingredient": "Mint leaves"
+            },
+            {
+                "unit": "tsp",
+                "amount": 2,
+                "special": "sugar"
+            },
+            {
+                "ingredient": "Soda water"
+            }
+        ],
+        "garnish": "Mint leaves and lemon slice",
+        "preparation": "Muddle mint sprigs with sugar and lime juice. Add splash of soda water and fill glass with cracked ice. Pour rum and top with soda water. Serve with straw."
+    },
+    {
+        "name": "Pisco Sour",
+        "glass": "old-fashioned",
+        "category": "All Day Cocktail",
+        "ingredients": [
+            {
+                "unit": "cl",
+                "amount": 4.5,
+                "ingredient": "Pisco"
+            },
+            {
+                "unit": "cl",
+                "amount": 3,
+                "ingredient": "Lemon juice"
+            },
+            {
+                "unit": "cl",
+                "amount": 2,
+                "ingredient": "Syrup"
+            },
+            {
+                "ingredient": "1 raw egg white (small egg)"
+            }
+        ],
+        "preparation": "Shake and strain into a chilled champagne flute. Dash some Angostura bitters on top."
+    }
+]
