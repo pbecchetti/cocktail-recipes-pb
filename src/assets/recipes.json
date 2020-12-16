@@ -1,58 +1,84 @@
-[
-    {
-        "name": "Mojito",
-        "glass": "collins",
-        "category": "Longdrink",
-        "ingredients": [
-            {
-                "unit": "cl",
-                "amount": 4,
-                "ingredient": "rum"
-            },
-            {
-                "unit": "cl",
-                "amount": 3,
-                "ingredient": "Lime juice"
-            },
-            {
-                "ingredient": "Mint leaves"
-            },
-            {
-                "unit": "tsp",
-                "amount": 2,
-                "special": "sugar"
-            },
-            {
-                "ingredient": "Soda water"
-            }
-        ],
-        "garnish": "Mint leaves and lemon slice",
-        "preparation": "Muddle mint sprigs with sugar and lime juice. Add splash of soda water and fill glass with cracked ice. Pour rum and top with soda water. Serve with straw."
+{
+    "recipes": {
+        "r001": {
+            "name": "Mojito",
+            "glass": "collins",
+            "category": "Longdrink",
+            "ingredients": [
+                {
+                    "unit": "cl",
+                    "amount": 4,
+                    "rum": true
+                },
+                {
+                    "unit": "cl",
+                    "amount": 3,
+                    "lime juice": true
+                },
+                {
+                    "mint leaves": true
+                },
+                {
+                    "unit": "tsp",
+                    "amount": 2,
+                    "sugar": true
+                },
+                {
+                    "soda water": true
+                }
+            ],
+            "garnish": "Mint leaves and lemon slice",
+            "preparation": "Muddle mint sprigs with sugar and lime juice. Add splash of soda water and fill glass with cracked ice. Pour rum and top with soda water. Serve with straw."
+        },
+        "r002": {
+            "name": "Moscow Mule",
+            "glass": "highball",
+            "category": "Longdrink",
+            "ingredients": [
+                {
+                    "unit": "cl",
+                    "amount": 4.5,
+                    "vodka": true
+                },
+                {
+                    "unit": "cl",
+                    "amount": 12,
+                    "ginger beer": true
+                },
+                {
+                    "unit": "cl",
+                    "amount": 0.5,
+                    "lime juice": true
+                },
+                {
+                    "special": "1 slice lime in a highball glass"
+                }
+            ],
+            "garnish": "Lime slice",
+            "preparation": "Combine the vodka and ginger beer. Add lime juice."
+        }
     },
-    {
-        "name": "Pisco Sour",
-        "glass": "old-fashioned",
-        "category": "All Day Cocktail",
-        "ingredients": [
-            {
-                "unit": "cl",
-                "amount": 4.5,
-                "ingredient": "Pisco"
-            },
-            {
-                "unit": "cl",
-                "amount": 3,
-                "ingredient": "Lemon juice"
-            },
-            {
-                "unit": "cl",
-                "amount": 2,
-                "ingredient": "Syrup"
-            },
-            {
-                "ingredient": "1 raw egg white (small egg)"
-            }
-        ],
-        "preparation": "Shake and strain into a chilled champagne flute. Dash some Angostura bitters on top."
+    "ingredients": {
+        "i001": {
+            "name": "rum"
+        },
+        "i002": {
+            "name": "lime juice"
+        },
+        "i003": {
+            "name": "mint leave"
+        },
+        "i004": {
+            "name": "sugar"
+        },
+        "i005": {
+            "name": "soda water"
+        },
+        "i006": {
+            "name": "vodka"
+        },
+        "i007": {
+            "name": "ginger beer"
+        }
     }
-]
+}

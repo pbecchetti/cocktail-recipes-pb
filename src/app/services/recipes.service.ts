@@ -14,21 +14,21 @@ export class RecipesService {
 
   getAllRecipes() {
 
-    return this.db.list<Recipe>('recipes').snapshotChanges()
+    return this.db.list<any>('recipes').snapshotChanges()
       .pipe(
         map(recipes => recipes.map((msg) => ({
           key: msg.payload.key, ...msg.payload.val()
         }))
         ),
-        map(recipes => {
-          recipes.forEach(element => {
-            console.log(element)
-            // if (element.name === 'plop') { element.name = 'new' }
-          })
-          console.log('COME ON')
-          return recipes
-        }
-        )
+        // map(recipes => {
+        //   recipes.forEach(element => {
+        //     console.log(element)
+        //     // if (element.name === 'plop') { element.name = 'new' }
+        //   })
+        //   console.log('COME ON')
+        //   return recipes
+        // }
+        // )
       )
   }
 }
