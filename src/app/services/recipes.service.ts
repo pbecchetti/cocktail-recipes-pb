@@ -19,16 +19,21 @@ export class RecipesService {
         map(recipes => recipes.map((msg) => ({
           key: msg.payload.key, ...msg.payload.val()
         }))
+        )
+      )
+  }
+
+  getAllIngredients() {
+
+    return this.db.list<any>('ingredients',
+      ref =>
+        ref.orderByChild('name')
+    ).snapshotChanges()
+      .pipe(
+        map(ingredients => ingredients.map((msg) => ({
+          key: msg.payload.key, ...msg.payload.val()
+        }))
         ),
-        // map(recipes => {
-        //   recipes.forEach(element => {
-        //     console.log(element)
-        //     // if (element.name === 'plop') { element.name = 'new' }
-        //   })
-        //   console.log('COME ON')
-        //   return recipes
-        // }
-        // )
       )
   }
 }

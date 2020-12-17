@@ -9,7 +9,8 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   cocktails: any[];
-  items: Observable<any[]>;
+  ingredients: any[];
+  ingredientsSelected = [];
 
   constructor(
     private recipesService: RecipesService,
@@ -19,11 +20,23 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.recipesService.getAllRecipes().subscribe(recipes => {
       this.cocktails = recipes
-      console.log('rec', recipes)
     }
-
     );
 
+    this.recipesService.getAllIngredients().subscribe(ingredients => {
+      this.ingredients = ingredients
+    }
+    );
+  }
+
+  selectIngredient(ingredient) {
+    const index = this.ingredientsSelected.indexOf(ingredient);
+    if (index > -1) {
+      this.ingredientsSelected.splice(index, 1);
+    } else {
+      this.ingredientsSelected.push(ingredient)
+    }
+    console.log('ingredients', this.ingredientsSelected)
   }
 
 }

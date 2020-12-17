@@ -1,7 +1,12 @@
-<p>home works!</p>
-<div *ngFor="let message of cocktails">
-    {{message.name}}
+<br> ------------------<br>
+List of ingredients
+<br> ------------------
+<div *ngFor="let ingredient of ingredients" (click)="selectIngredient(ingredient)">
+    {{ingredient.name}}
 </div>
-<li class="text" *ngFor="let item of items | async">
-    {{item.name}}
-</li>
+<br> ------------------<br>
+List of recipes
+<br> ------------------
+<div *ngFor="let cocktail of cocktails">
+    {{cocktail.name}}
+</div>
